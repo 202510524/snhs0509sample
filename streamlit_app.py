@@ -62,3 +62,21 @@ st.title('Hello World')
 
 st.link_button("연결할 url을 이 다음 변수에 써주세요!", 'https://docs.streamlit.io/develop/quick-reference/cheat-sheet')
 
+st.image("https://forest-s3.s3.amazonaws.com/uploads/summernote_asset/image/480/%EB%B3%B5%EC%9E%90%EA%B8%B0%EB%82%98%EB%AC%B4-%EC%9D%B8%EC%A0%9C%EC%88%98%EC%82%B0%EB%A6%ACB280910-031.JPG")
+st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmE3eHloZjhuazB4OHg1ZmZ1Z3A5c2s5dm1jcDJqc2dsODl5c2ttNiZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/uQgXjl505BdYAv8H0X/giphy.webp")
+
+# st.columns(n): 화면을 n개의 수직 열로 나눕니다
+col1, col2 = st.columns(2)  # 2개의 열 생성
+
+with col1:
+    st.write("왼쪽 열입니다.")  # 첫 번째 열에 내용 작성
+with col2:
+    st.write("오른쪽 열입니다.")  # 두 번째 열에 내용 작성
+
+    # st.tabs(["이름1", "이름2", ...]): 탭 인터페이스 생성
+tab1, tab2 = st.tabs(["탭 1", "탭 2"])  # 2개의 탭 생성
+
+with tab1:
+    st.write("탭 1에 해당하는 내용입니다.")  # 첫 번째 탭에 표시할 내용
+with tab2:
+    st.write("탭 2에 해당하는 내용입니다.")  # 두 번째 탭에 표시할 내용
